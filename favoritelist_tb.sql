@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2016 at 09:19 PM
+-- Generation Time: May 20, 2016 at 08:45 AM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.6.19
 
@@ -32,20 +32,21 @@ CREATE TABLE `favoritelist_tb` (
   `detailProduct` text NOT NULL,
   `priceShopA` float NOT NULL,
   `priceShopB` float NOT NULL,
-  `priceShopC` float NOT NULL
+  `priceShopC` float NOT NULL,
+  `picture_path` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `favoritelist_tb`
 --
 
-INSERT INTO `favoritelist_tb` (`idProduct`, `nameProduct`, `detailProduct`, `priceShopA`, `priceShopB`, `priceShopC`) VALUES
-(2, 'phone', 'It is a electronic for communication.', 21000, 19000, 20000),
-(3, 'SonyTV', 'It is a electronic for entertranment.', 7900, 6000, 7000),
-(4, 'Ipad', 'It is a electronic for entertranment.', 12500, 12900, 13000),
-(5, 'Mitsubishi Fan', 'It is a electronic for comfortable.', 530, 500, 550),
-(6, 'Yoyo', 'It is a food.', 20, 21, 19),
-(7, 'Coca-Cola', 'It is a food.', 39, 35, 36);
+INSERT INTO `favoritelist_tb` (`idProduct`, `nameProduct`, `detailProduct`, `priceShopA`, `priceShopB`, `priceShopC`, `picture_path`) VALUES
+(2, 'IPhone', 'It is a electronic for communication.', 21000, 19000, 20000, 'check\\images\\Iphone.JPG'),
+(3, 'SonyTV', 'It is a electronic for communication.', 7900, 6000, 7000, 'check\\images\\Sony TV.jpg'),
+(4, 'Ipad', 'It is a electronic for entertranment.', 12500, 12900, 13000, 'check\\images\\Ipad.jpg'),
+(5, 'Hatari Fan', 'It is a electronic for comfortable.', 530, 500, 550, 'check\\images\\Hatari.jpg'),
+(6, 'Yoyo', 'It is a food.', 20, 21, 19, 'check\\images\\yoyo.jpg'),
+(7, 'Coca-Cola', 'It is a food.', 39, 35, 36, 'check\\images\\coke.jpg');
 
 --
 -- Indexes for dumped tables
